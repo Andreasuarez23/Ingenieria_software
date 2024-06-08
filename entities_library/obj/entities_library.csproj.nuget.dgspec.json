@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/andrea/Desktop/Ingenieria_software/entities_library/entities_library.csproj": {}
+    "/home/yop/Documentos/escuela/IS_proyecto/Ingenieria_software/entities_library/entities_library.csproj": {}
   },
   "projects": {
-    "/home/andrea/Desktop/Ingenieria_software/entities_library/entities_library.csproj": {
+    "/home/yop/Documentos/escuela/IS_proyecto/Ingenieria_software/entities_library/entities_library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/andrea/Desktop/Ingenieria_software/entities_library/entities_library.csproj",
+        "projectUniqueName": "/home/yop/Documentos/escuela/IS_proyecto/Ingenieria_software/entities_library/entities_library.csproj",
         "projectName": "entities_library",
-        "projectPath": "/home/andrea/Desktop/Ingenieria_software/entities_library/entities_library.csproj",
-        "packagesPath": "/home/andrea/.nuget/packages/",
-        "outputPath": "/home/andrea/Desktop/Ingenieria_software/entities_library/obj/",
+        "projectPath": "/home/yop/Documentos/escuela/IS_proyecto/Ingenieria_software/entities_library/entities_library.csproj",
+        "packagesPath": "/home/yop/.nuget/packages/",
+        "outputPath": "/home/yop/Documentos/escuela/IS_proyecto/Ingenieria_software/entities_library/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/andrea/.nuget/NuGet/NuGet.Config"
+          "/home/yop/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -58,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/245/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

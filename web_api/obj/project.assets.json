@@ -107,6 +107,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "entities_library/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/entities_library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/entities_library.dll": {}
+        }
       }
     }
   },
@@ -451,28 +461,34 @@
         "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "entities_library/1.0.0": {
+      "type": "project",
+      "path": "../entities_library/entities_library.csproj",
+      "msbuildProject": "../entities_library/entities_library.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.AspNetCore.OpenApi >= 8.0.5",
-      "Swashbuckle.AspNetCore >= 6.4.0"
+      "Swashbuckle.AspNetCore >= 6.4.0",
+      "entities_library >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "/home/andrea/.nuget/packages/": {}
+    "/home/yop/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/andrea/Desktop/Ingenieria_software/web_api/web_api.csproj",
+      "projectUniqueName": "/home/yop/Documentos/escuela/IS_proyecto/Ingenieria_software/web_api/web_api.csproj",
       "projectName": "web_api",
-      "projectPath": "/home/andrea/Desktop/Ingenieria_software/web_api/web_api.csproj",
-      "packagesPath": "/home/andrea/.nuget/packages/",
-      "outputPath": "/home/andrea/Desktop/Ingenieria_software/web_api/obj/",
+      "projectPath": "/home/yop/Documentos/escuela/IS_proyecto/Ingenieria_software/web_api/web_api.csproj",
+      "packagesPath": "/home/yop/.nuget/packages/",
+      "outputPath": "/home/yop/Documentos/escuela/IS_proyecto/Ingenieria_software/web_api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/andrea/.nuget/NuGet/NuGet.Config"
+        "/home/yop/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -483,18 +499,17 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/yop/Documentos/escuela/IS_proyecto/Ingenieria_software/entities_library/entities_library.csproj": {
+              "projectPath": "/home/yop/Documentos/escuela/IS_proyecto/Ingenieria_software/entities_library/entities_library.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -529,7 +544,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/245/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
