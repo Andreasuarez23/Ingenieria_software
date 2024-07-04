@@ -10,6 +10,6 @@ public class Follow
 
     public bool IsFollower { get; set; } 
     
-    public DateTime DateFollow { get; set; } // Duración del seguimiento
+    public DateTime DateTime { get; set; } // Duración del seguimiento
 
 }
