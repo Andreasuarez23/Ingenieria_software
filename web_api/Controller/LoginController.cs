@@ -1,26 +1,53 @@
-using System.Reflection.Metadata;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Localization;
+using web_api.dto.common;
+using web_api.dto.login;
+using web_api.mock;
+using entities_library.login;
 
 namespace web_api.Controllers;
 
+
 [ApiController]
 [Route("[controller]")]
-
 public class LoginController : ControllerBase
 {
-
-    public LoginController(ILogger<LoginController>logger)
+    private readonly ILogger<LoginController> _logger;
+    
+    public LoginController(ILogger<LoginController> logger)
     {
-        _logger = logger
+        _logger = logger;
     }
 
-    [HttpGet(Name = "LoginController")]
-    public IEnumerable<LoginController>Get()
+    [HttpPost(Name = "Login")]
+    public IActionResult Post(LoginRequestDTO loginRequestDTO)
     {
-        return Summaries;
+        foreach(User user in UserMock.Instance.Users)
+        {
+            if(loginRequestDTO != null &&
+               loginRequestDTO.mail.ToLower().Equals(user.Mail) &&
+               user.IsPassword(loginRequestDTO.password))
+            {
+                return Ok(new LoginResponseDTO 
+                {
+                    success = true,
+                    message = "",
+                    id = user.Id,
+                    name = user.Name,
+                    lastName = user.LastName,
+                    description = user.Description,
+                    urlAvatar = "",
+                    mail = user.Mail
+                });
+            }
+        }
+        
+        
+        return Unauthorized(new ErrorResponseDTO
+        {
+            success = false,
+            message = "Invalid mail or password"
+        });
     }
-
 }
 
 
