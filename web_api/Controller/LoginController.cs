@@ -12,7 +12,7 @@ public class LoginController : ControllerBase
 
     public LoginController(ILogger<LoginController>logger)
     {
-        _logger = logger
+        _logger = logger;
     }
 
     [HttpGet(Name = "LoginController")]
