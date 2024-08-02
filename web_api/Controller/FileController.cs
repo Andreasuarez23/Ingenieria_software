@@ -30,11 +30,7 @@ namespace web_api.Controllers;
                 await file.CopyToAsync(stream);
             }
 
-            var fileUploadDto = new FileUploadDto
-            {
-                FileName = file.FileName,
-                FilePath = filePath
-            };
+            var fileUploadDto = new FileUploadDto(file.FileName, filePath);
 
             return Ok(fileUploadDto);
         }
