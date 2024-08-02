@@ -7,7 +7,12 @@ public class User//aca hereda de la clase persona los atributos nombre email
 
     public UserStatus UserStatus {get; set;} = UserStatus.Active;
 
-    public UserRole UserRole {get; set;} 
+    public UserRole UserRole {get; set;}
+    public object? Mail { get; set; }
+    public long Id { get; set; }
+    public string Name { get; set; }
+    public string LastName { get; set; }
+    public string Description { get; set; }
 
     public void Encrypt(string Password)
     {

@@ -36,7 +36,7 @@ public class LoginController : ControllerBase
                     lastName = user.LastName,
                     description = user.Description,
                     urlAvatar = "",
-                    mail = user.Mail
+                    mail = (string)user.Mail
                 });
             }
         }
